@@ -14,3 +14,8 @@ class FieldElement:
         if other is None:
             return False
         return self.num == other.num and self.prime == other.prime
+
+    def __ne__(self, other) -> bool:
+        if other is None:
+            return False
+        return self.num != other.num and self.prime != other.prime
